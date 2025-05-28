@@ -5,7 +5,7 @@ import { numbers } from "nanoid-dictionary";
 import css from "./ContactForm.module.css";
 import { formSchema } from "../../formSchema";
 import { useDispatch } from "react-redux";
-import { addContact } from "../../redux/contactsSlice";
+import { addContact } from "../../redux/contactsOps";
 
 export default function ContactForm() {
   const dispatch = useDispatch();  
