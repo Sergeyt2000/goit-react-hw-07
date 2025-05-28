@@ -13,7 +13,7 @@ export default function Contact({ contact }) {
   };
 
   return (
-    <>
+    <div className={css.contactBox}>
       <div className={css.contact}>
         <div className={css.contactInfo}>
           <RiContactsFill />
@@ -31,6 +31,6 @@ export default function Contact({ contact }) {
       >
         Delete
       </button>
-    </>
+    </div>
   );
 }
