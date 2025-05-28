@@ -1,7 +1,7 @@
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import { useId } from "react";
-import { customAlphabet } from "nanoid";
-import { numbers } from "nanoid-dictionary";
+// import { customAlphabet } from "nanoid";
+// import { numbers } from "nanoid-dictionary";
 import css from "./ContactForm.module.css";
 import { formSchema } from "../../formSchema";
 import { useDispatch } from "react-redux";
@@ -11,13 +11,13 @@ export default function ContactForm() {
   const dispatch = useDispatch();  
   const nameFieldId = useId();
   const phoneFieldId = useId();
-  const generateId = customAlphabet(numbers, 5);
+  // const generateId = customAlphabet(numbers, 5);
   const initialContacts = { username: "", phonenumber: "" };  
   
   const handleSubmit = (values, actions) => {
     dispatch(
       addContact({
-        id: "id-" + generateId(),
+        // id: "id-" + generateId(),
         name: values.username,
         number: values.phonenumber,
       })
